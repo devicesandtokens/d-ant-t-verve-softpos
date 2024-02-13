@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/navigation_graph"
+  app:startDestination="@id/shopping"
+  >
+
+  <fragment
+    android:id="@+id/shopping"
+    android:name="com.alcineo.bonappetit.ui.shopping.ShoppingFragment"
+    android:label="ShoppingFragment"
+    tools:layout="@layout/fragment_shopping"
+    >
+
+    <action
+      android:id="@+id/action_shopping_to_transaction"
+      app:destination="@id/transaction"
+      />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/transaction"
+    android:name="com.alcineo.bonappetit.ui.transaction.TransactionFragment"
+    android:label="TransactionFragment"
+    tools:layout="@layout/fragment_transaction"
+    >
+
+    <argument
+      android:name="transactionAmount"
+      app:argType="java.math.BigDecimal"
+      />
+
+    <argument
+        android:name="transactionCurrency"
+        app:argType="com.neovisionaries.i18n.CurrencyCode" />
+
+    <action
+      android:id="@+id/action_transaction_to_receipt"
+      app:destination="@id/receipt"
+      app:popUpTo="@id/shopping"
+      />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/receipt"
+    android:name="com.alcineo.bonappetit.ui.receipt.ReceiptFragment"
+    android:label="ReceiptFragment"
+    tools:layout="@layout/fragment_receipt"
+    >
+
+    <argument
+      android:name="transactionFullDataDto"
+      app:argType="com.alcineo.bonappetit.model.TransactionFullDataDto"
+      app:nullable="false"
+      />
+
+  </fragment>
+
+
+</navigation>

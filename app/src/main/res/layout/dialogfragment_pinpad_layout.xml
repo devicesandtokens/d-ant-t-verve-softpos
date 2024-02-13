@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pinpad_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/pinpad_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bonapp_pinpad_gray_background"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5"
+        app:rowOrderPreserved="true">
+
+        <!--row1-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pinpad_transactionamount_txt"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_columnSpan="4"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pinpad_pinmessage_txt"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="Enter Pin:"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_columnSpan="4"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pinpad_starscharsequence_txt"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:textColor="#000000"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="36sp"
+            app:layout_columnSpan="4"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_1"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_2"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_3"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pinpad_button_cancel"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_red"
+            android:src="@drawable/pinpad_cancel"
+            android:textColor="#000000"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <!--row2-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_4"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_5"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_6"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pinpad_button_correct"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_orange"
+            android:src="@drawable/pinpad_clear"
+            android:textColor="#000000"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <!--row3-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_7"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_8"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_9"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pinpad_button_valid"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_green"
+            android:src="@drawable/pinpad_enter"
+            android:textColor="#000000"
+            app:layout_columnWeight="1"
+            app:layout_rowSpan="2"
+            app:layout_rowWeight="1" />
+
+        <!--row4-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_gray"
+            android:clickable="false"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pinpad_button_0"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_white"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/pinpad_btn_shape_gray"
+            android:clickable="false"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+    <FrameLayout
+        android:id="@+id/pinpad_opengl_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/pinpad_gridlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

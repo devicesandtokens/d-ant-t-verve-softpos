@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/VisaSensoryBranding-1.0.6.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/edcd24d494458b67a20e9c052d22f382/transformed/jetified-VisaSensoryBranding-1.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/edcd24d494458b67a20e9c052d22f382/transformed/jetified-VisaSensoryBranding-1.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/edcd24d494458b67a20e9c052d22f382/transformed/jetified-VisaSensoryBranding-1.0.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

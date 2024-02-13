@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/SDK-6.1.4.6-PaymentEmvStandaloneUnprotectedDeveloppmentRelease.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4a57c786eec5576ba12419889379dba4/transformed/jetified-SDK-6.1.4.6-PaymentEmvStandaloneUnprotectedDeveloppmentRelease/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4a57c786eec5576ba12419889379dba4/transformed/jetified-SDK-6.1.4.6-PaymentEmvStandaloneUnprotectedDeveloppmentRelease/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

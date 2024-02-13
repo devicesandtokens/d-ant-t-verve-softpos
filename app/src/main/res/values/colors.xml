@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="bonapp_primary">#455C6E</color>
+  <color name="bonapp_primaryDark">#36324D</color>
+  <color name="bonapp_accent">#33c1ff</color>
+
+  <color name="bonapp_led_dark">#36324D</color>
+  <color name="bonapp_primary_background">#FFFFFF</color>
+  <color name="bonapp_secondary_background">#F1F1F1</color>
+  <color name="bonapp_shadow_background">#FFFFFF</color>
+  <color name="bonapp_error_background">#D81B60</color>
+
+  <color name="bonapp_pinpad_gray_background">#fafbfc</color>
+
+  <color name="bonapp_text_title">#000000</color>
+  <color name="bonapp_text_subtitle">#292929</color>
+  <color name="bonapp_text_body">#494949</color>
+
+</resources>

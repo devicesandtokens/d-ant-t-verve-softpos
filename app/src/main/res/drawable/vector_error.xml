@@ -1,0 +1,68 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="searchtoclose"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="circle"
+                android:pathData="M 1.661 12 C 1.661 6.319 6.29 1.714 12.001 1.714 C 17.709 1.714 22.34 6.319 22.34 12 C 22.34 17.681 17.709 22.286 12.001 22.286 C 6.29 22.286 1.661 17.681 1.661 12 Z"
+                android:fillColor="#e62e00"
+                android:strokeColor="#e62e00"
+                android:strokeWidth="1"/>
+            <path
+                android:name="ne_stem"
+                android:pathData="M 18 6 L 6 18"
+                android:strokeColor="#ffffff"
+                android:strokeWidth="1.8"
+                android:trimPathStart="1"
+                android:strokeLineCap="round"/>
+            <path
+                android:name="nw_stem"
+                android:pathData="M 6 6 L 18 18"
+                android:strokeColor="#ffffff"
+                android:strokeWidth="1.8"
+                android:trimPathStart="1"
+                android:strokeLineCap="round"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="nw_stem">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathStart"
+                android:startOffset="300"
+                android:duration="500"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="ne_stem">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathStart"
+                android:startOffset="522"
+                android:duration="314"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="circle">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:duration="700"
+                android:valueFrom="M 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 Z"
+                android:valueTo="M 1.661 12 C 1.661 6.319 6.29 1.714 12.001 1.714 C 17.709 1.714 22.34 6.319 22.34 12 C 22.34 17.681 17.709 22.286 12.001 22.286 C 6.29 22.286 1.661 17.681 1.661 12 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/bounce_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>

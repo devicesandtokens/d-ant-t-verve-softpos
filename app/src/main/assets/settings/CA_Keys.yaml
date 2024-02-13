@@ -1,0 +1,12 @@
+import:
+  - AXP\AXP_CA_KEYS.yaml
+  - CPACE\CPACE_CA_KEYS.yaml
+  - CUP\CUP_CA_KEYS.yaml
+  - DP\DP_CA_KEYS.yaml
+  - GC\GC_CA_KEYS.yaml
+  - JCB\JCB_CA_KEYS.yaml
+  - MCL\MCL_CA_KEYS.yaml
+  - PURE\PURE_CA_KEYS.yaml
+  - PW\PW_CA_KEYS.yaml
+  - EFT\EFT_CA_KEYS.yaml
+  - PBM\PBM_CA_KEYS.yaml
